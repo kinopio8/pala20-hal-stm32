@@ -1605,6 +1605,16 @@
 				slew-rate = "very-high-speed";
 			};
 
+			/omit-if-no-ref/ eth_rx_er_pi0: eth_rx_er_pi0 {
+				pinmux = <STM32_PINMUX('I', 0, AF11)>;
+				slew-rate = "very-high-speed";
+			};
+			
+			/omit-if-no-ref/ eth_int_pi1: eth_int_pi1 {
+				pinmux = <STM32_PINMUX('I', 1, AF11)>;
+				slew-rate = "very-high-speed";
+			};
+
 			/* ETH_TXD0 */
 
 			/omit-if-no-ref/ eth_txd0_pb12: eth_txd0_pb12 {
